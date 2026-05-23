@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Centro Estetico Arienzo — Trattamenti estetici professionali a Novara. Viso, corpo, epilazione e massaggi in Via Maestra 62/A. Prenota il tuo appuntamento.">
+  <meta name="theme-color" content="#7B2D5E">
+  <meta property="og:title" content="Centro Estetico Arienzo — Estetica Professionale Novara">
+  <meta property="og:description" content="Eccellenza estetica a Novara dal 1990. Trattamenti viso e corpo, epilazione avanzata, massaggi e percorsi benessere personalizzati con prodotti di alta qualità.">
+  <title>Centro Estetico Arienzo — Estetica Professionale Novara | Viso & Corpo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Albert+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Lora', 'Georgia', 'serif'],
+            sans: ['"Albert Sans"', 'Inter', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            cream: '#FDF9FB',
+            brand: '#7B2D5E',
+            'brand-dark': '#5C1F44',
+            'brand-light': '#A86B8A',
+            'brand-subtle': '#F7EEF3',
+            soft: '#F2E5EC',
+            gold: '#C9A96E',
+            charcoal: '#2D2429',
+            warm: '#E0CCD7'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}body{font-family:'Albert Sans',sans-serif;background:#FDF9FB;color:#2D2429}h1,h2,h3{font-family:'Lora',serif}
+    .hero-bg{background:linear-gradient(160deg,#1A0E15 0%,#3D1A2C 20%,#7B2D5E 45%,#A86B8A 65%,#F7EEF3 85%,#FDF9FB 100%);position:relative}
+    .hero-bg::before{content:'';position:absolute;inset:0;z-index:0;background-image:url('https://res.cloudinary.com/dnrekgt5h/image/upload/agenzia-ai/bg/theme-plum-gold.png');background-size:cover;background-position:center;opacity:0.35;mix-blend-mode:overlay}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(201,169,110,0.15) 0%,transparent 60%),radial-gradient(ellipse at 70% 80%,rgba(123,45,94,0.18) 0%,transparent 50%);pointer-events:none}
+    .glass{background:rgba(255,255,255,0.6);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.3)}
+    .glass-card{background:rgba(255,255,255,0.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.4);border-radius:1.5rem;transition:all 0.4s ease}
+    .glass-card:hover{background:rgba(255,255,255,0.75);transform:translateY(-4px);box-shadow:0 20px 40px rgba(123,45,94,0.1)}
+    .brand-line{width:60px;height:2px;background:linear-gradient(90deg,#7B2D5E,#A86B8A);margin:0 auto}
+    .btn-primary{background:linear-gradient(135deg,#7B2D5E,#A86B8A);color:white;padding:1rem 2rem;border-radius:2rem;font-weight:500;transition:all 0.3s;display:inline-block}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(123,45,94,0.35)}
+    .btn-outline{border:1.5px solid rgba(45,36,41,0.3);color:#2D2429;padding:1rem 2rem;border-radius:2rem;font-weight:500;transition:all 0.3s;background:rgba(255,255,255,0.3)}
+    .btn-outline:hover{background:#2D2429;color:white}
+    .reveal-up{opacity:0;transform:translateY(40px)}.reveal-left{opacity:0;transform:translateX(-40px)}.reveal-right{opacity:0;transform:translateX(40px)}.reveal-scale{opacity:0;transform:scale(0.9)}
+    .nav-hidden{transform:translateY(-100%)}
+    .blur-reveal{filter:blur(10px);opacity:0;transform:translateY(30px);transition:filter 0.8s cubic-bezier(0.16,1,0.3,1),opacity 0.8s,transform 0.8s}
+    .blur-reveal.visible{filter:blur(0);opacity:1;transform:translateY(0)}
+    .spotlight-card{position:relative;overflow:hidden;--sx:0.5;--sy:0.5}
+    .spotlight-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(350px circle at calc(var(--sx)*100%) calc(var(--sy)*100%),rgba(201,169,110,0.15),transparent 60%);opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:1}
+    .spotlight-card:hover::before{opacity:1}.spotlight-card>*{position:relative;z-index:2}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#FDF9FB}::-webkit-scrollbar-thumb{background:#C9A96E;border-radius:3px}
+    .service-icon{font-size:2rem;margin-bottom:0.75rem;display:block;text-align:center;transition:transform 0.5s}
+    .glass-card:hover .service-icon{transform:scale(1.15)}
+    @keyframes float-diamond{0%,100%{transform:translate(0,0)rotate(0deg)scale(1)}33%{transform:translate(25px,-35px)rotate(8deg)scale(1.1)}66%{transform:translate(-20px,-20px)rotate(-6deg)scale(0.95)}}
+    .diamond{position:absolute;pointer-events:none;opacity:0.25;animation:float-diamond 13s ease-in-out infinite;color:#C9A96E;font-size:1.8rem}
+    .diamond:nth-child(2){animation-delay:-4s;left:72%;top:40%;font-size:1.4rem}
+    .diamond:nth-child(3){animation-delay:-8s;left:18%;top:55%;font-size:1rem}
+    .diamond:nth-child(4){animation-delay:-11s;left:68%;top:22%;font-size:2rem}
+    .star{color:#C9A96E}.star.empty{color:#E0CCD7}
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Loader -->
+  <div id="loader" class="fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-700" style="background:#FDF9FB">
+    <div class="text-center">
+      <div class="text-5xl mb-4">💎</div>
+      <div class="text-3xl font-serif text-brand mb-2">Centro Estetico Arienzo</div>
+      <div class="text-sm tracking-widest uppercase text-charcoal/40">Eccellenza dal 1990</div>
+      <div class="w-16 h-[2px] bg-gold mx-auto mt-4 animate-pulse"></div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-500">
+    <div class="glass mx-4 mt-4 rounded-2xl px-6 py-4 flex items-center justify-between max-w-6xl lg:mx-auto">
+      <a href="#" class="flex items-center gap-3">
+        <span class="text-2xl">💎</span>
+        <span class="font-serif text-lg text-charcoal tracking-wide">Centro Estetico Arienzo</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/70">
+        <a href="#chi-siamo" class="hover:text-brand transition-colors">Chi Siamo</a>
+        <a href="#servizi" class="hover:text-brand transition-colors">Servizi</a>
+        <a href="#recensioni" class="hover:text-brand transition-colors">Recensioni</a>
+        <a href="#prenota" class="hover:text-brand transition-colors">Prenota</a>
+        <a href="#contatti" class="hover:text-brand transition-colors">Contatti</a>
+        <a href="https://wa.me/393341671827" target="_blank" class="btn-primary text-sm px-5 py-2.5" style="padding:0.6rem 1.5rem">WhatsApp</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl text-charcoal">☰</button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="fixed inset-0 z-40 flex items-center justify-center transform translate-x-full transition-transform duration-500" style="background:rgba(253,249,251,0.95);backdrop-filter:blur(16px)">
+    <button id="closeMenu" class="absolute top-8 right-8 text-3xl text-charcoal">✕</button>
+    <div class="flex flex-col items-center gap-8 text-2xl font-serif text-charcoal">
+      <a href="#chi-siamo" class="mobile-link">Chi Siamo</a><a href="#servizi" class="mobile-link">Servizi</a><a href="#recensioni" class="mobile-link">Recensioni</a><a href="#prenota" class="mobile-link">Prenota</a><a href="#contatti" class="mobile-link">Contatti</a>
+      <a href="https://wa.me/393341671827" target="_blank" class="btn-primary">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-bg">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="diamond" style="left:8%;top:30%">✦</div>
+      <div class="diamond">✦</div>
+      <div class="diamond">✦</div>
+      <div class="diamond">✦</div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-32 pb-20 relative z-10 text-center">
+      <div class="reveal-up">
+        <span class="text-brand-light text-sm tracking-[0.3em] uppercase font-medium">Estetica Professionale • Novara</span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-semibold leading-[1.1] mt-6 mb-6 text-charcoal">L'<span class="text-brand font-semibold italic">eleganza</span><br>della <span class="text-brand font-semibold">bellezza</span> autentica</h1>
+        <p class="text-lg text-charcoal/60 max-w-lg mx-auto leading-relaxed mb-10">Oltre 30 anni di esperienza nell'estetica professionale. Tecnologie avanzate, prodotti di eccellenza e un team di specialiste dedicate al tuo benessere.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#prenota" class="btn-primary">Prenota un Appuntamento</a>
+          <a href="#servizi" class="btn-outline">Scopri i Trattamenti</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chi Siamo -->
+  <section id="chi-siamo" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left order-2 lg:order-1">
+          <div class="rounded-[2rem] overflow-hidden shadow-2xl">
+            <div class="w-full h-[450px] flex items-center justify-center relative" style="background:linear-gradient(135deg,#F7EEF3,#E0CCD7,#A86B8A)">
+              <span class="font-serif text-8xl opacity-20">💎</span>
+              <span class="absolute bottom-6 right-8 text-sm text-charcoal/30">Via Maestra 62/A, Novara</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right order-1 lg:order-2">
+          <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">La Nostra Storia</span>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-6 text-charcoal blur-reveal">Tradizione e <span class="italic text-brand">innovazione</span></h2>
+          <div class="brand-line mb-8" style="margin-left:0"></div>
+          <div class="space-y-4 text-charcoal/70 leading-relaxed">
+            <p>Il Centro Estetico Arienzo è un punto di riferimento a Novara da oltre tre decenni. In Via Maestra 62/A ti accogliamo in un ambiente elegante e professionale, dove ogni trattamento è eseguito con la massima cura e attenzione.</p>
+            <p>Uniamo <strong>tecnologie all'avanguardia</strong> a prodotti cosmetici di altissima qualità per offrirti risultati visibili e duraturi. Dalla radiofrequenza all'epilazione avanzata, ogni servizio è personalizzato sulle tue esigenze specifiche.</p>
+          </div>
+          <div class="mt-8 p-6 rounded-2xl border" style="background:rgba(123,45,94,0.05);border-color:rgba(123,45,94,0.15)">
+            <blockquote class="border-l-2 border-brand pl-6 italic text-charcoal/70 font-serif text-lg">
+              "La vera bellezza nasce dalla cura costante e dalla professionalità. Per questo mettiamo il cuore in ogni trattamento."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi -->
+  <section id="servizi" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#FDF9FB 0%,rgba(123,45,94,0.06) 30%,#F7EEF3 60%,#FDF9FB 100%)">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Cosa Offriamo</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Trattamenti Esclusivi</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60 max-w-xl mx-auto">Tecnologia e professionalità per risultati eccellenti in ogni trattamento.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">✨</span><h3 class="font-serif text-lg mb-2">Viso Premium</h3><p class="text-xs text-charcoal/55">Antietà avanzato<br>+ Radiofrequenza</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💫</span><h3 class="font-serif text-lg mb-2">Corpo</h3><p class="text-xs text-charcoal/55">Rimodellamento<br>Rassodamento</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💆‍♀️</span><h3 class="font-serif text-lg mb-2">Massaggi</h3><p class="text-xs text-charcoal/55">Tecnica avanzata<br>Personalizzati</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">⚡</span><h3 class="font-serif text-lg mb-2">Epilazione</h3><p class="text-xs text-charcoal/55">Luce pulsata<br>Definitiva</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🔬</span><h3 class="font-serif text-lg mb-2">Peeling</h3><p class="text-xs text-charcoal/55">Chimico professionale<br>Rinnovo cutaneo</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💎</span><h3 class="font-serif text-lg mb-2">Diamante</h3><p class="text-xs text-charcoal/55">Microdermoabrasione<br>Luminosità</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💅</span><h3 class="font-serif text-lg mb-2">Manicure</h3><p class="text-xs text-charcoal/55">Semipermanente<br>Ricostruzione</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🦶</span><h3 class="font-serif text-lg mb-2">Pedicure</h3><p class="text-xs text-charcoal/55">Estetico avanzato<br>Trattamenti</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recensioni -->
+  <section id="recensioni" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#FDF9FB,#F7EEF3)">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Dicono di Noi</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Recensioni</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Centro estetico di altissimo livello. Professionalità e cortesia in ogni trattamento. Lo frequento da anni!"</p>
+          <p class="text-sm text-charcoal/50">— <strong>Maria Grazia P.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Ambiente elegante e pulitissimo. Trattamenti viso eccellenti con risultati che si vedono subito."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Roberta F.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"La migliore epilazione che abbia mai provato. Personale competente e attrezzature moderne."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Alessandra M.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prenota -->
+  <section id="prenota" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#F7EEF3,#FDF9FB)">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Prenotazioni</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Prenota il Tuo Trattamento</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60">Scegli data e ora. Ti risponderemo rapidamente per confermare la disponibilità.</p>
+      </div>
+      <div class="glass-card p-8 reveal-up">
+        <form id="bookingForm" class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Nome</label><input type="text" id="name" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Il tuo nome"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Telefono</label><input type="tel" id="phone" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="+39 ..."></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Data</label><input type="date" id="date" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Orario</label><select id="time" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option></select></div>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Trattamento</label>
+            <select id="service" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors">
+              <option>Viso Premium Antietà</option><option>Corpo Rimodellamento</option><option>Massaggio Personalizzato</option><option>Epilazione Definitiva</option><option>Peeling Professionale</option><option>Microdermoabrasione</option><option>Manicure Semipermanente</option><option>Pedicure Avanzato</option>
+            </select>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Note (opzionale)</label><textarea id="notes" rows="2" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Allergie, preferenze, richieste particolari..."></textarea></div>
+          <button type="submit" class="btn-primary w-full text-center">Conferma Prenotazione</button>
+        </form>
+        <div id="bookingConfirm" class="hidden text-center mt-6">
+          <div class="text-5xl mb-4">💎</div>
+          <h3 class="font-serif text-2xl mb-2">Grazie!</h3>
+          <p class="text-charcoal/60">Ti contatteremo al più presto per confermare l'appuntamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:#2D2429">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold/70 text-sm tracking-[0.3em] uppercase font-medium">Dove Siamo</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-white blur-reveal">Contatti</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="glass-card text-charcoal p-8 reveal-left">
+          <h3 class="font-serif text-xl mb-6">Centro Estetico Arienzo</h3>
+          <div class="space-y-4 text-charcoal/70">
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📍</span> Via Maestra 62/A<br><span class="ml-6">28100 Novara (NO)</span></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📱</span> <a href="tel:+393341671827" class="hover:text-brand transition-colors">334 1671827</a></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">💬</span> <a href="https://wa.me/393341671827" target="_blank" class="hover:text-brand transition-colors">Scrivici su WhatsApp</a></p>
+          </div>
+          <div class="mt-6">
+            <p class="text-sm text-charcoal/50 mb-2">Orari di apertura</p>
+            <div class="text-sm space-y-1 text-charcoal/60">
+              <p>Lunedì: Chiuso</p>
+              <p>Mar–Ven: 9:00–12:30, 14:30–19:00</p>
+              <p>Sabato: 9:00–13:00, 14:30–17:00</p>
+              <p>Domenica: Chiuso</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right rounded-[2rem] overflow-hidden min-h-[300px] flex items-center justify-center" style="background:linear-gradient(135deg,rgba(123,45,94,0.3),rgba(168,107,138,0.2))">
+          <span class="font-serif text-4xl opacity-20 text-white">Novara</span>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/30 text-sm">
+        &copy; 2026 Centro Estetico Arienzo &mdash; Via Maestra 62/A, 28100 Novara (NO)
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    window.addEventListener('load',()=>{gsap.to('#loader',{opacity:0,duration:0.7,ease:'power2.inOut',onComplete:()=>{document.getElementById('loader').style.display='none'}})});
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>{const d=el.classList.contains('reveal-up')?{y:60}:el.classList.contains('reveal-left')?{x:-60}:el.classList.contains('reveal-right')?{x:60}:{scale:0.9};const ini=el.classList.contains('reveal-scale')?{opacity:0,scale:0.9}:Object.assign({opacity:0},d);gsap.fromTo(el,ini,{opacity:1,x:0,y:0,scale:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}})});
+    gsap.fromTo('#servizi .glass-card',{opacity:0,scale:0.8,y:30},{opacity:1,scale:1,y:0,duration:0.7,stagger:0.08,ease:'power3.out',scrollTrigger:{trigger:'#servizi',start:'top 75%',once:true}});
+    gsap.fromTo('#recensioni .glass-card',{opacity:0,y:40},{opacity:1,y:0,duration:0.6,stagger:0.15,ease:'power2.out',scrollTrigger:{trigger:'#recensioni',start:'top 80%',once:true}});
+    let ls=0;const n=document.getElementById('nav');window.addEventListener('scroll',()=>{const cs=window.pageYOffset;if(cs>100&&cs>ls)n.classList.add('nav-hidden');else n.classList.remove('nav-hidden');ls=cs});
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('translate-x-full'));
+    document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full'));
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full')));
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('name').value;const p=document.getElementById('phone').value;const d=document.getElementById('date').value;const t=document.getElementById('time').value;const s=document.getElementById('service').value;const nt=document.getElementById('notes').value;const m='*Nuova Prenotazione Centro Estetico Arienzo*%0A%0A👤 '+n+'%0A📞 '+p+'%0A💆 '+s+'%0A📅 '+d+'%0A🕐 '+t+(nt?'%0A📝 '+nt:'');window.open('https://wa.me/393341671827?text='+m,'_blank');document.getElementById('bookingForm').style.display='none';document.getElementById('bookingConfirm').classList.remove('hidden')});
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script>const lenis=new Lenis({duration:1.2,smoothWheel:true});function raf(time){lenis.raf(time);requestAnimationFrame(raf)}requestAnimationFrame(raf);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(time=>lenis.raf(time*1000));gsap.ticker.lagSmoothing(0)</script>
+  <script>
+    const bo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15});
+    document.querySelectorAll('.blur-reveal').forEach(el=>bo.observe(el));
+    document.querySelectorAll('.spotlight-card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--sx',(e.clientX-r.left)/r.width);card.style.setProperty('--sy',(e.clientY-r.top)/r.height)});card.addEventListener('mouseleave',()=>{card.style.setProperty('--sx',0.5);card.style.setProperty('--sy',0.5)})});
+  </script>
+</body>
+</html>

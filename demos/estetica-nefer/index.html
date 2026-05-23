@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estetica Nefer — Centro estetico a Cavaglio d'Agogna. Trattamenti viso e corpo professionali, massaggi, manicure e pedicure. Via Stazione 59.">
+  <meta name="theme-color" content="#7B3F6A">
+  <meta property="og:title" content="Estetica Nefer — Centro Estetico Cavaglio d'Agogna">
+  <meta property="og:description" content="La bellezza dell'antico Egitto incontra la moderna estetica. Trattamenti esclusivi che ti fanno sentire una regina. Prenota ora.">
+  <title>Estetica Nefer — Centro Estetico Cavaglio d'Agogna | Bellezza Regale</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            cream: '#faf7f9',
+            brand: '#7B3F6A',
+            'brand-dark': '#643356',
+            'brand-light': '#A06D8F',
+            'brand-subtle': '#F3EBF0',
+            soft: '#e8dce3',
+            gold: '#D4AF37',
+            charcoal: '#2a1f26',
+            warm: '#dcccd5'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}body{font-family:'Montserrat',sans-serif;background:#faf7f9;color:#2a1f26}h1,h2,h3{font-family:'Cormorant Garamond',serif}
+    .hero-bg{position:relative;overflow:hidden}
+    .hero-bg::before{content:'';position:absolute;inset:0;background:url('https://res.cloudinary.com/dnrekgt5h/image/upload/agenzia-ai/bg/theme-plum-gold.png') center/cover no-repeat;z-index:0}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(42,31,38,0.88) 0%,rgba(100,51,86,0.72) 30%,rgba(123,63,106,0.52) 55%,rgba(160,109,143,0.22) 80%,rgba(250,247,249,0.08) 100%);z-index:1;pointer-events:none}
+    .hero-content{position:relative;z-index:2}
+    .glass{background:rgba(250,247,249,0.65);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(123,63,106,0.15)}
+    .glass-card{background:rgba(250,247,249,0.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(123,63,106,0.2);border-radius:1.5rem;transition:all 0.4s ease}
+    .glass-card:hover{background:rgba(250,247,249,0.8);transform:translateY(-4px);box-shadow:0 20px 40px rgba(123,63,106,0.12)}
+    .brand-line{width:60px;height:2px;background:linear-gradient(90deg,#7B3F6A,#D4AF37);margin:0 auto}
+    .btn-primary{background:linear-gradient(135deg,#7B3F6A,#A06D8F);color:white;padding:1rem 2rem;border-radius:2rem;font-weight:500;transition:all 0.3s;display:inline-block}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(123,63,106,0.35)}
+    .btn-outline{border:1.5px solid rgba(42,31,38,0.3);color:#2a1f26;padding:1rem 2rem;border-radius:2rem;font-weight:500;transition:all 0.3s;background:rgba(250,247,249,0.4)}
+    .btn-outline:hover{background:#2a1f26;color:white}
+    .btn-gold{background:linear-gradient(135deg,#D4AF37,#C4A030);color:#2a1f26;padding:1rem 2rem;border-radius:2rem;font-weight:600;transition:all 0.3s;display:inline-block}
+    .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(212,175,55,0.4)}
+    .reveal-up{opacity:0;transform:translateY(40px)}.reveal-left{opacity:0;transform:translateX(-40px)}.reveal-right{opacity:0;transform:translateX(40px)}.reveal-scale{opacity:0;transform:scale(0.9)}
+    .nav-hidden{transform:translateY(-100%)}
+    .blur-reveal{filter:blur(10px);opacity:0;transform:translateY(30px);transition:filter 0.8s cubic-bezier(0.16,1,0.3,1),opacity 0.8s,transform 0.8s}
+    .blur-reveal.visible{filter:blur(0);opacity:1;transform:translateY(0)}
+    .spotlight-card{position:relative;overflow:hidden;--sx:0.5;--sy:0.5}
+    .spotlight-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(350px circle at calc(var(--sx)*100%) calc(var(--sy)*100%),rgba(212,175,55,0.12),transparent 60%);opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:1}
+    .spotlight-card:hover::before{opacity:1}.spotlight-card>*{position:relative;z-index:2}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#faf7f9}::-webkit-scrollbar-thumb{background:#D4AF37;border-radius:3px}
+    .service-icon{font-size:2rem;margin-bottom:0.75rem;display:block;text-align:center;transition:transform 0.5s}
+    .glass-card:hover .service-icon{transform:scale(1.15)}
+    @keyframes float{0%,100%{transform:translate(0,0)rotate(0deg)}33%{transform:translate(20px,-30px)rotate(5deg)}66%{transform:translate(-15px,-15px)rotate(-3deg)}}
+    .eye{position:absolute;pointer-events:none;opacity:0.18;animation:float 14s ease-in-out infinite}
+    .eye:nth-child(2){animation-delay:-4s;left:80%;top:35%;font-size:2rem}
+    .eye:nth-child(3){animation-delay:-8s;left:20%;top:55%;font-size:1.5rem}
+    .eye:nth-child(4){animation-delay:-11s;left:75%;top:15%}
+    .star{color:#D4AF37}.star.empty{color:#dcccd5}
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <div id="loader" class="fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-700" style="background:#faf7f9">
+    <div class="text-center">
+      <div class="text-5xl mb-4">👑</div>
+      <div class="text-3xl font-serif text-brand mb-2">Estetica Nefer</div>
+      <div class="text-sm text-charcoal/50 tracking-[0.3em] uppercase">Bellezza Regale</div>
+      <div class="w-16 h-[2px] bg-gold mx-auto mt-4 animate-pulse"></div>
+    </div>
+  </div>
+
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-500">
+    <div class="glass mx-4 mt-4 rounded-2xl px-6 py-4 flex items-center justify-between max-w-6xl lg:mx-auto">
+      <a href="#" class="flex items-center gap-3">
+        <span class="text-2xl">👑</span>
+        <span class="font-serif text-lg text-charcoal tracking-wide">Estetica Nefer</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/70">
+        <a href="#chi-siamo" class="hover:text-brand transition-colors">Chi Siamo</a>
+        <a href="#servizi" class="hover:text-brand transition-colors">Servizi</a>
+        <a href="#filosofia" class="hover:text-brand transition-colors">Filosofia</a>
+        <a href="#prenota" class="hover:text-brand transition-colors">Prenota</a>
+        <a href="#contatti" class="hover:text-brand transition-colors">Contatti</a>
+        <a href="tel:+390322806232" class="btn-primary text-sm px-5 py-2.5" style="padding:0.6rem 1.5rem">Chiama Ora</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl text-charcoal">☰</button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="fixed inset-0 z-40 flex items-center justify-center transform translate-x-full transition-transform duration-500" style="background:rgba(250,247,249,0.97);backdrop-filter:blur(16px)">
+    <button id="closeMenu" class="absolute top-8 right-8 text-3xl text-charcoal">✕</button>
+    <div class="flex flex-col items-center gap-8 text-2xl font-serif text-charcoal">
+      <a href="#chi-siamo" class="mobile-link">Chi Siamo</a><a href="#servizi" class="mobile-link">Servizi</a><a href="#filosofia" class="mobile-link">Filosofia</a><a href="#prenota" class="mobile-link">Prenota</a><a href="#contatti" class="mobile-link">Contatti</a>
+      <a href="tel:+390322806232" class="btn-primary">Chiama Ora</a>
+    </div>
+  </div>
+
+  <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-bg">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div class="eye" style="left:15%;top:25%">👁️</div>
+      <div class="eye">👁️</div>
+      <div class="eye">✨</div>
+      <div class="eye">💫</div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-32 pb-20 hero-content text-center">
+      <div class="reveal-up">
+        <span class="text-gold/80 text-sm tracking-[0.3em] uppercase font-semibold">Centro Estetico • Cavaglio d'Agogna</span>
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-serif font-semibold leading-[1.1] mt-6 mb-6 text-white">Nefer: la <span class="italic" style="color:#D4AF37">bellezza</span><br>che ti rende <span class="italic" style="color:#D4AF37">regina</span></h1>
+        <p class="text-lg text-white/70 max-w-lg mx-auto leading-relaxed mb-10">Nefer, nell'antico Egitto, significava "bella". Un nome che è una promessa: ogni trattamento è pensato per farti sentire speciale, come una regina.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#prenota" class="btn-gold">Prenota Ora</a>
+          <a href="#servizi" class="btn-outline" style="border-color:rgba(255,255,255,0.3);color:white;background:rgba(255,255,255,0.08)">Scopri i Trattamenti</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left order-2 lg:order-1">
+          <div class="rounded-[2rem] overflow-hidden shadow-2xl">
+            <div class="w-full h-[450px] flex items-center justify-center" style="background:linear-gradient(135deg,#F3EBF0,#dcccd5,#7B3F6A);position:relative">
+              <div style="position:absolute;inset:0;background:url('https://res.cloudinary.com/dnrekgt5h/image/upload/agenzia-ai/bg/theme-plum-gold.png') center/cover;opacity:0.25"></div>
+              <span class="font-serif text-8xl opacity-25" style="position:relative;z-index:1;color:white">👑</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right order-1 lg:order-2">
+          <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">La Nostra Storia</span>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-6 text-charcoal blur-reveal"><span class="text-brand italic">Nefer</span> = <span style="color:#D4AF37">Bella</span></h2>
+          <div class="brand-line mb-8" style="margin-left:0"></div>
+          <div class="space-y-4 text-charcoal/70 leading-relaxed">
+            <p>In Via Stazione 59, a Cavaglio d'Agogna, <strong>Estetica Nefer</strong> ti accoglie in un ambiente elegante e raffinato dove ogni dettaglio è pensato per il tuo benessere.</p>
+            <p>Il nostro nome viene dall'antico egizio e significa "bella". Un'ispirazione che guida ogni nostro trattamento: <strong>valorizzare la tua bellezza naturale</strong> con tecniche professionali e prodotti di eccellenza. Perché ogni donna merita di sentirsi una regina.</p>
+          </div>
+          <div class="mt-8 p-6 rounded-2xl border" style="background:rgba(123,63,106,0.05);border-color:rgba(123,63,106,0.15)">
+            <blockquote class="border-l-2 border-brand pl-6 italic text-charcoal/70 font-serif text-lg">
+              "Nefer non è solo un nome: è la promessa che ogni trattamento ti farà sentire straordinariamente bella."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servizi" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#faf7f9 0%,rgba(123,63,106,0.05) 30%,#F3EBF0 60%,#faf7f9 100%)">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">I Nostri Rituali di Bellezza</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Trattamenti da Regina</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60 max-w-xl mx-auto">Un percorso di bellezza completo pensato per farti risplendere in ogni occasione.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">✨</span><h3 class="font-serif text-lg mb-2">Viso Regale</h3><p class="text-xs text-charcoal/55">Pulizia Profonda<br>Luminosità Immediata</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💫</span><h3 class="font-serif text-lg mb-2">Corpo</h3><p class="text-xs text-charcoal/55">Rimodellamento<br>Drenaggio</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💆</span><h3 class="font-serif text-lg mb-2">Massaggi</h3><p class="text-xs text-charcoal/55">Relax<br>Decontratturanti</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">⚡</span><h3 class="font-serif text-lg mb-2">Epilazione</h3><p class="text-xs text-charcoal/55">Ceretta Professionale<br>Pelle di Seta</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💅</span><h3 class="font-serif text-lg mb-2">Manicure</h3><p class="text-xs text-charcoal/55">Classica<br>Semipermanente</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🦶</span><h3 class="font-serif text-lg mb-2">Pedicure</h3><p class="text-xs text-charcoal/55">Estetico<br>Curativo</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🌸</span><h3 class="font-serif text-lg mb-2">Benessere</h3><p class="text-xs text-charcoal/55">Aromaterapia<br>Relax Profondo</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">👑</span><h3 class="font-serif text-lg mb-2">Royal Package</h3><p class="text-xs text-charcoal/55">Trattamento Completo<br>Esperienza Esclusiva</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="filosofia" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">La Nostra Filosofia</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Il Segreto di Nefer</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="glass-card p-8 reveal-up text-center">
+          <span class="text-4xl mb-4 block">🧴</span>
+          <h3 class="font-serif text-xl mb-3">Ingredienti Preziosi</h3>
+          <p class="text-sm text-charcoal/60">Come le regine d'Egitto, utilizziamo solo prodotti cosmetici di altissima qualità per la tua pelle.</p>
+        </div>
+        <div class="glass-card p-8 reveal-up text-center">
+          <span class="text-4xl mb-4 block">🤲</span>
+          <h3 class="font-serif text-xl mb-3">Rituali Personalizzati</h3>
+          <p class="text-sm text-charcoal/60">Ogni trattamento è un rituale su misura, pensato per esaltare la tua bellezza unica e personale.</p>
+        </div>
+        <div class="glass-card p-8 reveal-up text-center">
+          <span class="text-4xl mb-4 block">🏛️</span>
+          <h3 class="font-serif text-xl mb-3">Atmosfera Regale</h3>
+          <p class="text-sm text-charcoal/60">Varcando la nostra porta, entri in un mondo di eleganza e relax dove sei la protagonista assoluta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prenota" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#faf7f9,#F3EBF0)">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Prenotazioni</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Prenota il Tuo Momento Regale</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60">Scegli data, ora e trattamento. Ti aspettiamo per un'esperienza unica.</p>
+      </div>
+      <div class="glass-card p-8 reveal-up">
+        <form id="bookingForm" class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Nome</label><input type="text" id="name" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Il tuo nome"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Telefono</label><input type="tel" id="phone" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="+39 ..."></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Data</label><input type="date" id="date" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Orario</label><select id="time" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option><option>17:30</option></select></div>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Servizio</label>
+            <select id="service" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors">
+              <option>Viso Regale — Pulizia Profonda</option><option>Corpo — Rimodellamento</option><option>Massaggio Relax</option><option>Massaggio Decontratturante</option><option>Epilazione Professionale</option><option>Manicure</option><option>Pedicure</option><option>Royal Package — Completo</option>
+            </select>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Note (opzionale)</label><textarea id="notes" rows="2" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Allergie, preferenze, richieste particolari..."></textarea></div>
+          <button type="submit" class="btn-primary w-full text-center">Conferma Prenotazione</button>
+        </form>
+        <div id="bookingConfirm" class="hidden text-center mt-6">
+          <div class="text-5xl mb-4">👑</div>
+          <h3 class="font-serif text-2xl mb-2">Grazie, Regina!</h3>
+          <p class="text-charcoal/60">Ti contatteremo al più presto per confermare l'appuntamento. Preparati a sentirti Nefer!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:#2a1f26">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold/70 text-sm tracking-[0.3em] uppercase font-medium">Dove Siamo</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-white blur-reveal">Contatti</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="glass-card text-charcoal p-8 reveal-left">
+          <h3 class="font-serif text-xl mb-6">Estetica Nefer</h3>
+          <div class="space-y-4 text-charcoal/70">
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📍</span> Via Stazione 59<br><span class="ml-6">28010 Cavaglio d'Agogna (NO)</span></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📞</span> <a href="tel:+390322806232" class="hover:text-brand transition-colors">0322 806232</a></p>
+          </div>
+        </div>
+        <div class="reveal-right rounded-[2rem] overflow-hidden min-h-[300px] flex items-center justify-center" style="background:linear-gradient(135deg,rgba(123,63,106,0.35),rgba(212,175,55,0.2))">
+          <span class="font-serif text-4xl opacity-20 text-white">Cavaglio d'Agogna</span>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/30 text-sm">
+        &copy; 2026 Estetica Nefer &mdash; Via Stazione 59, 28010 Cavaglio d'Agogna (NO)
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    window.addEventListener('load',()=>{gsap.to('#loader',{opacity:0,duration:0.7,ease:'power2.inOut',onComplete:()=>{document.getElementById('loader').style.display='none'}})});
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>{const d=el.classList.contains('reveal-up')?{y:60}:el.classList.contains('reveal-left')?{x:-60}:el.classList.contains('reveal-right')?{x:60}:{scale:0.9};const ini=el.classList.contains('reveal-scale')?{opacity:0,scale:0.9}:Object.assign({opacity:0},d);gsap.fromTo(el,ini,{opacity:1,x:0,y:0,scale:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}})});
+    gsap.fromTo('#servizi .glass-card',{opacity:0,scale:0.8,y:30},{opacity:1,scale:1,y:0,duration:0.7,stagger:0.08,ease:'power3.out',scrollTrigger:{trigger:'#servizi',start:'top 75%',once:true}});
+    gsap.fromTo('#filosofia .glass-card',{opacity:0,y:40},{opacity:1,y:0,duration:0.6,stagger:0.15,ease:'power2.out',scrollTrigger:{trigger:'#filosofia',start:'top 80%',once:true}});
+    let ls=0;const n=document.getElementById('nav');window.addEventListener('scroll',()=>{const cs=window.pageYOffset;if(cs>100&&cs>ls)n.classList.add('nav-hidden');else n.classList.remove('nav-hidden');ls=cs});
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('translate-x-full'));
+    document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full'));
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full')));
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('bookingForm').style.display='none';document.getElementById('bookingConfirm').classList.remove('hidden')});
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script>const lenis=new Lenis({duration:1.2,smoothWheel:true});function raf(time){lenis.raf(time);requestAnimationFrame(raf)}requestAnimationFrame(raf);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(time=>lenis.raf(time*1000));gsap.ticker.lagSmoothing(0)</script>
+
+  <script>
+    const bo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15});
+    document.querySelectorAll('.blur-reveal').forEach(el=>bo.observe(el));
+    document.querySelectorAll('.spotlight-card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--sx',(e.clientX-r.left)/r.width);card.style.setProperty('--sy',(e.clientY-r.top)/r.height)});card.addEventListener('mouseleave',()=>{card.style.setProperty('--sx',0.5);card.style.setProperty('--sy',0.5)})});
+  </script>
+</body>
+</html>

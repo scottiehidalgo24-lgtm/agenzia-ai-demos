@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M.C.M. Aesthetic Studio — Trattamenti estetici avanzati a Gattico-Veruno. Medicina estetica, viso, corpo, ringiovanimento. Via Roma 11.">
+  <meta name="theme-color" content="#6B3A6E">
+  <meta property="og:title" content="M.C.M. Aesthetic Studio — Gattico-Veruno">
+  <meta property="og:description" content="Estetica avanzata e ringiovanimento a Gattico-Veruno. Tecnologia di ultima generazione per risultati visibili in un ambiente medicale.">
+  <title>M.C.M. Aesthetic Studio — Gattico-Veruno | Estetica Avanzata</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Bodoni Moda"', 'Georgia', 'serif'],
+            sans: ['Outfit', 'Inter', 'sans-serif']
+          },
+          colors: {
+            cream: '#FDF8FB',
+            brand: '#6B3A6E',
+            'brand-dark': '#5B2D5E',
+            'brand-light': '#9B7B9E',
+            'brand-subtle': '#F5EDF6',
+            soft: '#F0E4F2',
+            gold: '#C9A96E',
+            charcoal: '#2A1F2D',
+            warm: '#D4C0D9'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}body{font-family:'Outfit',sans-serif;background:#FDF8FB;color:#2A1F2D}h1,h2,h3{font-family:'Bodoni Moda',serif}
+    .hero-bg{position:relative;overflow:hidden}
+    .hero-bg::before{content:'';position:absolute;inset:0;background:url('https://res.cloudinary.com/dnrekgt5h/image/upload/agenzia-ai/bg/theme-plum-gold.png') center/cover no-repeat;z-index:0}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,31,45,0.6) 0%,rgba(42,31,45,0.42) 40%,rgba(42,31,45,0.3) 70%,rgba(42,31,45,0.65) 100%);z-index:1}
+    .hero-bg>*{position:relative;z-index:2}
+    .glass{background:rgba(255,255,255,0.65);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.35)}
+    .glass-card{background:rgba(255,255,255,0.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.45);border-radius:1.5rem;transition:all 0.4s cubic-bezier(0.16,1,0.3,1)}
+    .glass-card:hover{background:rgba(255,255,255,0.78);transform:translateY(-5px);box-shadow:0 24px 48px rgba(107,58,110,0.12)}
+    .brand-line{width:60px;height:2px;background:linear-gradient(90deg,#6B3A6E,#C9A96E);margin:0 auto}
+    .btn-primary{background:linear-gradient(135deg,#6B3A6E,#9B7B9E);color:white;padding:1rem 2.25rem;border-radius:2.5rem;font-weight:500;transition:all 0.35s cubic-bezier(0.16,1,0.3,1);display:inline-block;letter-spacing:0.02em}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(107,58,110,0.4)}
+    .btn-outline{border:1.5px solid rgba(42,31,45,0.3);color:#2A1F2D;padding:1rem 2.25rem;border-radius:2.5rem;font-weight:500;transition:all 0.35s;background:rgba(255,255,255,0.35)}
+    .btn-outline:hover{background:#2A1F2D;color:white;border-color:#2A1F2D}
+    .reveal-up{opacity:0;transform:translateY(50px)}.reveal-left{opacity:0;transform:translateX(-50px)}.reveal-right{opacity:0;transform:translateX(50px)}.reveal-scale{opacity:0;transform:scale(0.88)}
+    .nav-hidden{transform:translateY(-100%)}
+    .blur-reveal{filter:blur(12px);opacity:0;transform:translateY(35px);transition:filter 0.9s cubic-bezier(0.16,1,0.3,1),opacity 0.9s,transform 0.9s}
+    .blur-reveal.visible{filter:blur(0);opacity:1;transform:translateY(0)}
+    .spotlight-card{position:relative;overflow:hidden;--sx:0.5;--sy:0.5}
+    .spotlight-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(380px circle at calc(var(--sx)*100%) calc(var(--sy)*100%),rgba(201,169,110,0.16),transparent 60%);opacity:0;transition:opacity 0.35s;pointer-events:none;z-index:1}
+    .spotlight-card:hover::before{opacity:1}.spotlight-card>*{position:relative;z-index:2}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#FDF8FB}::-webkit-scrollbar-thumb{background:#C9A96E;border-radius:3px}
+    .service-icon{font-size:2.25rem;margin-bottom:0.75rem;display:block;text-align:center;transition:transform 0.5s cubic-bezier(0.34,1.56,0.64,1)}
+    .glass-card:hover .service-icon{transform:scale(1.2)}
+    @keyframes float{0%,100%{transform:translate(0,0)rotate(0deg)}33%{transform:translate(24px,-35px)rotate(6deg)}66%{transform:translate(-18px,-18px)rotate(-4deg)}}
+    .petal{position:absolute;pointer-events:none;opacity:0.18;animation:float 16s ease-in-out infinite}
+    .petal:nth-child(2){animation-delay:-5s;left:75%;top:40%;font-size:2rem}
+    .petal:nth-child(3){animation-delay:-9s;left:25%;top:60%;font-size:1.5rem}
+    .petal:nth-child(4){animation-delay:-12s;left:70%;top:20%}
+    .star{color:#C9A96E}.star.empty{color:#D4C0D9}
+    .accent-dot{display:inline-block;width:8px;height:8px;background:#C9A96E;border-radius:50%;margin-right:12px}
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <div id="loader" class="fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-700" style="background:#FDF8FB">
+    <div class="text-center">
+      <div class="text-3xl font-serif text-brand mb-3 tracking-[0.15em]">M.C.M.</div>
+      <div class="w-16 h-[2px] bg-gold mx-auto animate-pulse"></div>
+    </div>
+  </div>
+
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-500">
+    <div class="glass mx-4 mt-4 rounded-2xl px-6 py-4 flex items-center justify-between max-w-6xl lg:mx-auto">
+      <a href="#" class="flex items-center gap-3">
+        <span class="font-serif text-lg text-charcoal tracking-[0.1em]">M.C.M.</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/70">
+        <a href="#chi-siamo" class="hover:text-brand transition-colors">Chi Siamo</a>
+        <a href="#servizi" class="hover:text-brand transition-colors">Servizi</a>
+        <a href="#recensioni" class="hover:text-brand transition-colors">Recensioni</a>
+        <a href="#prenota" class="hover:text-brand transition-colors">Prenota</a>
+        <a href="#contatti" class="hover:text-brand transition-colors">Contatti</a>
+        <a href="tel:+393271990308" class="btn-primary text-sm" style="padding:0.65rem 1.6rem">Chiama Ora</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl text-charcoal">☰</button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="fixed inset-0 z-40 flex items-center justify-center transform translate-x-full transition-transform duration-500" style="background:rgba(253,248,251,0.96);backdrop-filter:blur(20px)">
+    <button id="closeMenu" class="absolute top-8 right-8 text-3xl text-charcoal">✕</button>
+    <div class="flex flex-col items-center gap-8 text-2xl font-serif text-charcoal">
+      <a href="#chi-siamo" class="mobile-link">Chi Siamo</a><a href="#servizi" class="mobile-link">Servizi</a><a href="#recensioni" class="mobile-link">Recensioni</a><a href="#prenota" class="mobile-link">Prenota</a><a href="#contatti" class="mobile-link">Contatti</a>
+      <a href="tel:+393271990308" class="btn-primary">Chiama Ora</a>
+    </div>
+  </div>
+
+  <section id="hero" class="min-h-screen flex items-center justify-center hero-bg">
+    <div class="absolute inset-0 z-[1] overflow-hidden">
+      <div class="petal" style="left:10%;top:30%">✦</div>
+      <div class="petal">✦</div>
+      <div class="petal">✦</div>
+      <div class="petal">✦</div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-32 pb-20 relative z-10 text-center">
+      <div class="reveal-up">
+        <span class="text-gold/80 text-sm tracking-[0.4em] uppercase font-medium">Aesthetic Studio • Gattico-Veruno</span>
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-serif font-semibold leading-[1.06] mt-6 mb-6 text-white">L'<span class="text-gold font-semibold">arte</span><br>dell'<span class="text-gold font-semibold">estetica</span></h1>
+        <p class="text-lg text-white/70 max-w-lg mx-auto leading-relaxed mb-10">Dove la scienza incontra la bellezza. Tecnologia all'avanguardia e competenza medica per risultati straordinari e naturali.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#prenota" class="btn-primary">Prenota una Consulenza</a>
+          <a href="#servizi" class="btn-outline" style="border-color:rgba(255,255,255,0.4);color:white;background:rgba(255,255,255,0.1)">Scopri i Trattamenti</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left order-2 lg:order-1">
+          <div class="rounded-[2.5rem] overflow-hidden shadow-2xl">
+            <div class="w-full h-[450px] flex items-center justify-center" style="background:linear-gradient(135deg,#F5EDF6,#E8D5EA,#C9A96E)">
+              <span class="font-serif text-8xl opacity-20">✦</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right order-1 lg:order-2">
+          <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Il Nostro Studio</span>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-6 text-charcoal blur-reveal"><span class="italic text-brand">M.C.M.</span> Aesthetic Studio</h2>
+          <div class="brand-line mb-8" style="margin-left:0"></div>
+          <div class="space-y-4 text-charcoal/70 leading-relaxed">
+            <p>In Via Roma 11, a Gattico-Veruno, nasce M.C.M.: uno studio dove l'estetica si eleva a disciplina scientifica. Uniamo <strong>competenza, tecnologia e un approccio personalizzato</strong> per offrirti trattamenti di altissimo livello in un ambiente elegante e professionale.</p>
+            <p>Ogni percorso inizia con un'attenta consulenza: ascoltiamo i tuoi desideri, analizziamo le tue esigenze e costruiamo insieme il piano di trattamento ideale. Perché la bellezza autentica non è standard: è su misura.</p>
+          </div>
+          <div class="mt-8 p-6 rounded-2xl border" style="background:rgba(107,58,110,0.05);border-color:rgba(107,58,110,0.15)">
+            <blockquote class="border-l-2 border-brand pl-6 italic text-charcoal/70 font-serif text-lg">
+              "Non cambiamo il tuo viso. Esaltiamo la tua bellezza naturale con la precisione della scienza."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servizi" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#FDF8FB 0%,rgba(107,58,110,0.06) 30%,#F5EDF6 60%,#FDF8FB 100%)">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Trattamenti</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Estetica Avanzata</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60 max-w-xl mx-auto">Tecnologia medicale e protocolli personalizzati per risultati che durano nel tempo.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">✨</span><h3 class="font-serif text-lg mb-2">Viso Medico</h3><p class="text-xs text-charcoal/55">Biorivitalizzazione<br>Peeling Avanzati</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🔬</span><h3 class="font-serif text-lg mb-2">Ringiovanimento</h3><p class="text-xs text-charcoal/55">Radiofrequenza<br>Filler</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🌿</span><h3 class="font-serif text-lg mb-2">Corpo</h3><p class="text-xs text-charcoal/55">Rimodellamento<br>Cavitazione</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💆</span><h3 class="font-serif text-lg mb-2">Massaggi Medici</h3><p class="text-xs text-charcoal/55">Decontratturanti<br>Linfodrenaggio</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">⚡</span><h3 class="font-serif text-lg mb-2">Epilazione</h3><p class="text-xs text-charcoal/55">Laser<br>Definitiva</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💉</span><h3 class="font-serif text-lg mb-2">Medicina Estetica</h3><p class="text-xs text-charcoal/55">Tossina Botulinica<br>Acido Ialuronico</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🧬</span><h3 class="font-serif text-lg mb-2">Skin Care</h3><p class="text-xs text-charcoal/55">Protocolli Personalizzati<br>Cosmetici Medicali</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">📋</span><h3 class="font-serif text-lg mb-2">Consulenza</h3><p class="text-xs text-charcoal/55">Check-up Pelle<br>Piano Trattamento</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-4xl mb-4">🏥</div>
+          <h3 class="font-serif text-xl mb-3">Standard Medicali</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Ambiente sterile, protocolli certificati e sicurezza al primo posto.</p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="font-serif text-xl mb-3">Risultati Visibili</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Prima e dopo documentati. Ogni trattamento è pensato per risultati misurabili.</p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-4xl mb-4">🤝</div>
+          <h3 class="font-serif text-xl mb-3">Consulenza Onesta</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Ti diremo sempre cosa è meglio per te, anche se significa consigliarti meno.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recensioni" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Dicono di Noi</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Recensioni</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Professionalità ai massimi livelli. La consulenza è stata onesta e i risultati sono evidenti."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Claudia R.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Finalmente un centro che unisce competenza medica e attenzione estetica. Consigliatissimo."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Paola M.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Studio elegantissimo e all'avanguardia. I trattamenti viso mi hanno cambiato la pelle!"</p>
+          <p class="text-sm text-charcoal/50">— <strong>Beatrice L.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prenota" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#FDF8FB,#F5EDF6)">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Prenotazioni</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Prenota la Tua Consulenza</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60">Prima visita conoscitiva gratuita. Ti risponderemo per fissare l'appuntamento.</p>
+      </div>
+      <div class="glass-card p-8 reveal-up">
+        <form id="bookingForm" class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Nome</label><input type="text" id="name" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Il tuo nome"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Telefono</label><input type="tel" id="phone" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="+39 ..."></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Data</label><input type="date" id="date" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Orario</label><select id="time" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option></select></div>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Trattamento di Interesse</label>
+            <select id="service" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors">
+              <option>Consulenza Conoscitiva (Gratuita)</option><option>Viso — Biorivitalizzazione</option><option>Viso — Peeling Avanzato</option><option>Ringiovanimento — Radiofrequenza</option><option>Corpo — Rimodellamento</option><option>Medicina Estetica</option><option>Epilazione Laser</option><option>Skin Care Personalizzato</option>
+            </select>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Note (opzionale)</label><textarea id="notes" rows="2" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Allergie, patologie, farmaci in corso, richieste particolari..."></textarea></div>
+          <button type="submit" class="btn-primary w-full text-center">Richiedi Consulenza</button>
+        </form>
+        <div id="bookingConfirm" class="hidden text-center mt-6">
+          <div class="text-5xl mb-4">💜</div>
+          <h3 class="font-serif text-2xl mb-2">Grazie!</h3>
+          <p class="text-charcoal/60">Ti contatteremo al più presto per fissare la tua consulenza conoscitiva gratuita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:#2A1F2D">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold/70 text-sm tracking-[0.3em] uppercase font-medium">Dove Siamo</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-white blur-reveal">Contatti</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="glass-card text-charcoal p-8 reveal-left">
+          <h3 class="font-serif text-xl mb-6">M.C.M. Aesthetic Studio</h3>
+          <div class="space-y-4 text-charcoal/70">
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📍</span> Via Roma 11<br><span class="ml-6">28013 Gattico-Veruno (NO)</span></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📞</span> <a href="tel:+393271990308" class="hover:text-brand transition-colors">327 199 0308</a></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">💬</span> <a href="https://wa.me/393271990308" class="hover:text-brand transition-colors">WhatsApp</a></p>
+          </div>
+          <div class="mt-6">
+            <p class="text-sm text-charcoal/50 mb-2">Orari di apertura</p>
+            <div class="text-sm space-y-1 text-charcoal/60">
+              <p>Lunedì: Chiuso</p>
+              <p>Mar–Ven: 9:00–12:30, 14:30–19:30</p>
+              <p>Sabato: 9:00–13:00</p>
+              <p>Domenica: Chiuso</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right rounded-[2.5rem] overflow-hidden min-h-[300px] flex items-center justify-center" style="background:linear-gradient(135deg,rgba(107,58,110,0.4),rgba(201,169,110,0.25))">
+          <span class="font-serif text-4xl opacity-25 text-white">Gattico-Veruno</span>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/30 text-sm">
+        &copy; 2026 M.C.M. Aesthetic Studio &mdash; Via Roma 11, 28013 Gattico-Veruno (NO)
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    window.addEventListener('load',()=>{gsap.to('#loader',{opacity:0,duration:0.7,ease:'power2.inOut',onComplete:()=>{document.getElementById('loader').style.display='none'}})});
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>{const d=el.classList.contains('reveal-up')?{y:60}:el.classList.contains('reveal-left')?{x:-60}:el.classList.contains('reveal-right')?{x:60}:{scale:0.9};const ini=el.classList.contains('reveal-scale')?{opacity:0,scale:0.9}:Object.assign({opacity:0},d);gsap.fromTo(el,ini,{opacity:1,x:0,y:0,scale:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}})});
+    gsap.fromTo('#servizi .glass-card',{opacity:0,scale:0.8,y:30},{opacity:1,scale:1,y:0,duration:0.7,stagger:0.08,ease:'power3.out',scrollTrigger:{trigger:'#servizi',start:'top 75%',once:true}});
+    gsap.fromTo('#recensioni .glass-card',{opacity:0,y:40},{opacity:1,y:0,duration:0.6,stagger:0.15,ease:'power2.out',scrollTrigger:{trigger:'#recensioni',start:'top 80%',once:true}});
+    let ls=0;const n=document.getElementById('nav');window.addEventListener('scroll',()=>{const cs=window.pageYOffset;if(cs>100&&cs>ls)n.classList.add('nav-hidden');else n.classList.remove('nav-hidden');ls=cs});
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('translate-x-full'));
+    document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full'));
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full')));
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const nm=document.getElementById('name').value;const ph=document.getElementById('phone').value;const dt=document.getElementById('date').value;const tm=document.getElementById('time').value;const sv=document.getElementById('service').value;const nt=document.getElementById('notes').value;const msg='*Nuova Richiesta M.C.M. Aesthetic Studio*%0A%0A👤 '+nm+'%0A📞 '+ph+'%0A💆 '+sv+'%0A📅 '+dt+'%0A🕐 '+tm+(nt?'%0A📝 '+nt:'');window.open('https://wa.me/393271990308?text='+msg,'_blank');document.getElementById('bookingForm').style.display='none';document.getElementById('bookingConfirm').classList.remove('hidden')});
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script>const lenis=new Lenis({duration:1.2,smoothWheel:true});function raf(time){lenis.raf(time);requestAnimationFrame(raf)}requestAnimationFrame(raf);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(time=>lenis.raf(time*1000));gsap.ticker.lagSmoothing(0)</script>
+
+  <script>
+    const bo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15});
+    document.querySelectorAll('.blur-reveal').forEach(el=>bo.observe(el));
+    document.querySelectorAll('.spotlight-card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--sx',(e.clientX-r.left)/r.width);card.style.setProperty('--sy',(e.clientY-r.top)/r.height)});card.addEventListener('mouseleave',()=>{card.style.setProperty('--sx',0.5);card.style.setProperty('--sy',0.5)})});
+  </script>
+</body>
+</html>

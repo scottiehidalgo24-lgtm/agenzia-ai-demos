@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Beauty Expert — Centro estetico d'eccellenza a Novara. Trattamenti viso, corpo, massaggi e consulenze personalizzate. Corso Vercelli 58.">
+  <meta name="theme-color" content="#5B2C4F">
+  <meta property="og:title" content="My Beauty Expert — Centro Estetico Novara">
+  <meta property="og:description" content="La tua bellezza merita un esperto. Trattamenti professionali personalizzati con tecnologie all'avanguardia nel cuore di Novara.">
+  <title>My Beauty Expert — Centro Estetico Novara | Esperienza & Professionalità</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Tenor Sans"', 'Georgia', 'serif'],
+            sans: ['Jost', 'Inter', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            cream: '#faf7f9',
+            brand: '#5B2C4F',
+            'brand-dark': '#3D1A34',
+            'brand-light': '#9B6B8A',
+            'brand-subtle': '#f5eef3',
+            soft: '#efe6ec',
+            gold: '#C9A76B',
+            'gold-light': '#D9C090',
+            charcoal: '#1a1317',
+            warm: '#d4c5cf',
+            plum: '#7B4B6A',
+            'deep-plum': '#2D1024'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}body{font-family:'Jost',sans-serif;background:#faf7f9;color:#1a1317}h1,h2,h3{font-family:'Tenor Sans',serif}
+    .hero-bg{position:relative;overflow:hidden}
+    .hero-bg-img{position:absolute;inset:0;z-index:0;background:url('https://res.cloudinary.com/dnrekgt5h/image/upload/agenzia-ai/bg/theme-plum-gold.png') center/cover no-repeat}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(165deg,rgba(26,19,23,0.65) 0%,rgba(91,44,79,0.45) 35%,rgba(123,75,106,0.3) 60%,rgba(250,247,249,0.5) 100%);z-index:1;pointer-events:none}
+    .glass{background:rgba(255,255,255,0.55);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,0.3)}
+    .glass-card{background:rgba(255,255,255,0.5);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(201,167,107,0.25);border-radius:1.25rem;transition:all 0.45s cubic-bezier(0.16,1,0.3,1)}
+    .glass-card:hover{background:rgba(255,255,255,0.75);transform:translateY(-5px);box-shadow:0 20px 40px rgba(91,44,79,0.1);border-color:rgba(201,167,107,0.5)}
+    .brand-line{width:80px;height:2px;background:linear-gradient(90deg,#C9A76B,#7B4B6A);margin:0 auto;border-radius:2px}
+    .btn-primary{background:linear-gradient(135deg,#5B2C4F,#7B4B6A);color:white;padding:0.9rem 2.2rem;font-weight:500;transition:all 0.3s;display:inline-block;letter-spacing:0.04em;border-radius:0.5rem}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(91,44,79,0.35)}
+    .btn-outline{border:1.5px solid rgba(26,19,23,0.3);color:#1a1317;padding:0.9rem 2.2rem;font-weight:500;transition:all 0.3s;border-radius:0.5rem;background:rgba(255,255,255,0.3)}
+    .btn-outline:hover{background:#1a1317;color:white;border-color:#1a1317}
+    .reveal-up{opacity:0;transform:translateY(40px)}.reveal-left{opacity:0;transform:translateX(-40px)}.reveal-right{opacity:0;transform:translateX(40px)}.reveal-scale{opacity:0;transform:scale(0.9)}
+    .nav-hidden{transform:translateY(-100%)}
+    .blur-reveal{filter:blur(10px);opacity:0;transform:translateY(30px);transition:filter 0.8s cubic-bezier(0.16,1,0.3,1),opacity 0.8s,transform 0.8s}
+    .blur-reveal.visible{filter:blur(0);opacity:1;transform:translateY(0)}
+    .spotlight-card{position:relative;overflow:hidden;--sx:0.5;--sy:0.5}
+    .spotlight-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(320px circle at calc(var(--sx)*100%) calc(var(--sy)*100%),rgba(201,167,107,0.15),transparent 60%);opacity:0;transition:opacity 0.3s;pointer-events:none;z-index:1}
+    .spotlight-card:hover::before{opacity:1}.spotlight-card>*{position:relative;z-index:2}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#faf7f9}::-webkit-scrollbar-thumb{background:#C9A76B;border-radius:3px}
+    .star{color:#C9A76B}.star.empty{color:#d4c5cf}
+    .service-number{font-family:'Tenor Sans',serif;font-size:4rem;color:rgba(201,167,107,0.15);line-height:1}
+    .badge-expert{background:linear-gradient(135deg,rgba(91,44,79,0.88),rgba(123,75,106,0.88));color:white;font-size:0.65rem;padding:0.3rem 1rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em}
+    .vertical-line{width:1px;background:linear-gradient(180deg,transparent,rgba(201,167,107,0.4),transparent)}
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Loader -->
+  <div id="loader" class="fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-700" style="background:#1a1317">
+    <div class="text-center">
+      <div class="text-gold text-xs tracking-[0.3em] uppercase mb-4">My Beauty</div>
+      <div class="text-4xl font-serif text-cream tracking-wider">EXPERT</div>
+      <div class="w-20 h-[1px] bg-gold mx-auto mt-6 animate-pulse"></div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-500">
+    <div class="glass mx-4 mt-4 px-6 py-4 flex items-center justify-between max-w-6xl lg:mx-auto" style="border-radius:0.75rem">
+      <a href="#" class="flex items-center gap-2">
+        <span class="font-serif text-lg text-charcoal tracking-wide">My Beauty <span class="text-gold font-bold">Expert</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/70">
+        <a href="#chi-siamo" class="hover:text-brand transition-colors">Chi Siamo</a>
+        <a href="#servizi" class="hover:text-brand transition-colors">Servizi</a>
+        <a href="#recensioni" class="hover:text-brand transition-colors">Recensioni</a>
+        <a href="#prenota" class="hover:text-brand transition-colors">Prenota</a>
+        <a href="#contatti" class="hover:text-brand transition-colors">Contatti</a>
+        <a href="tel:+393275977707" class="btn-primary text-sm px-5 py-2.5" style="padding:0.6rem 1.5rem">Chiama</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl text-charcoal">☰</button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="fixed inset-0 z-40 flex items-center justify-center transform translate-x-full transition-transform duration-500" style="background:rgba(26,19,23,0.95);backdrop-filter:blur(16px)">
+    <button id="closeMenu" class="absolute top-8 right-8 text-3xl text-gold">✕</button>
+    <div class="flex flex-col items-center gap-8 text-xl font-serif text-cream">
+      <a href="#chi-siamo" class="mobile-link">Chi Siamo</a><a href="#servizi" class="mobile-link">Servizi</a><a href="#recensioni" class="mobile-link">Recensioni</a><a href="#prenota" class="mobile-link">Prenota</a><a href="#contatti" class="mobile-link">Contatti</a>
+      <a href="tel:+393275977707" class="btn-primary">Chiama Ora</a>
+    </div>
+  </div>
+
+  <!-- Hero — Large type, centered -->
+  <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-bg">
+    <div class="hero-bg-img"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-32 pb-20 relative z-10">
+      <div class="reveal-up text-center">
+        <div class="badge-expert inline-block mb-8">Centro Estetico • Novara</div>
+        <h1 class="text-5xl md:text-7xl lg:text-9xl font-serif leading-none mb-6 text-white drop-shadow-lg">
+          My Beauty<br><span class="text-gold font-bold">Expert</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-white/80 max-w-lg mx-auto mb-12 leading-relaxed">La tua bellezza merita <span class="text-gold-light">un esperto</span>.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#prenota" class="btn-primary">Prenota una Consulenza</a>
+          <a href="#servizi" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.35)">Scopri i Servizi</a>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/40 text-xs tracking-[0.3em] uppercase z-10 reveal-up">Scorri per scoprire</div>
+    </div>
+  </section>
+
+  <!-- Chi Siamo — Horizontal split with visual -->
+  <section id="chi-siamo" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left">
+          <span class="text-gold text-xs tracking-[0.3em] uppercase font-medium">La Nostra Filosofia</span>
+          <h2 class="text-4xl md:text-5xl font-serif mt-4 mb-6 text-charcoal blur-reveal">Esperienza <br><span class="italic text-brand">&</span> Professionalità</h2>
+          <div class="brand-line mb-8" style="margin-left:0"></div>
+          <div class="space-y-4 text-charcoal/70 leading-relaxed">
+            <p>My Beauty Expert nasce dalla convinzione che ogni persona meriti un approccio <strong>professionale e personalizzato</strong> alla bellezza. Il nostro centro in Corso Vercelli 58 è uno spazio dove competenza, tecnologia e attenzione al dettaglio si fondono.</p>
+            <p>Non offriamo trattamenti standard: ogni percorso inizia con una <strong>consulenza approfondita</strong> per comprendere le tue esigenze e costruire insieme il piano di trattamento ideale.</p>
+          </div>
+          <div class="mt-8 grid grid-cols-3 gap-4 text-center">
+            <div class="p-4 rounded-xl" style="background:rgba(91,44,79,0.04)">
+              <div class="text-2xl mb-2 font-serif text-brand">10+</div>
+              <div class="text-xs text-charcoal/50">Anni di<br>Esperienza</div>
+            </div>
+            <div class="p-4 rounded-xl" style="background:rgba(91,44,79,0.04)">
+              <div class="text-2xl mb-2 font-serif text-brand">500+</div>
+              <div class="text-xs text-charcoal/50">Clienti<br>Soddisfatti</div>
+            </div>
+            <div class="p-4 rounded-xl" style="background:rgba(91,44,79,0.04)">
+              <div class="text-2xl mb-2 font-serif text-brand">100%</div>
+              <div class="text-xs text-charcoal/50">Prodotti<br>Professional</div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="relative">
+            <div class="rounded-[2rem] overflow-hidden shadow-2xl">
+              <div class="w-full aspect-[3/4] flex items-center justify-center" style="background:linear-gradient(160deg,rgba(91,44,79,0.15),rgba(201,167,107,0.1),rgba(123,75,106,0.15))">
+                <div class="text-center p-8">
+                  <div class="service-number text-8xl">✦</div>
+                  <p class="font-serif text-lg text-brand mt-4">My Beauty Expert</p>
+                  <p class="text-sm text-charcoal/40 mt-2">Corso Vercelli 58</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servizi — Numbered cards layout -->
+  <section id="servizi" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#faf7f9 0%,#f5eef3 40%,#faf7f9 100%)">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold text-xs tracking-[0.3em] uppercase font-medium">Cosa Facciamo</span>
+        <h2 class="text-4xl md:text-5xl font-serif mt-4 mb-4 text-charcoal blur-reveal">Servizi Professionali</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60 max-w-xl mx-auto">Trattamenti su misura con tecnologie avanzate e prodotti professionali di alta gamma.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 reveal-scale spotlight-card relative">
+          <div class="service-number absolute top-3 right-4">01</div>
+          <span class="text-3xl mb-3 block">✨</span>
+          <h3 class="font-serif text-lg mb-2">Trattamenti Viso</h3>
+          <p class="text-xs text-charcoal/55">Anti-età, rigeneranti, pulizia profonda con prodotti professionali</p>
+        </div>
+        <div class="glass-card p-6 reveal-scale spotlight-card relative">
+          <div class="service-number absolute top-3 right-4">02</div>
+          <span class="text-3xl mb-3 block">🌿</span>
+          <h3 class="font-serif text-lg mb-2">Trattamenti Corpo</h3>
+          <p class="text-xs text-charcoal/55">Tonificazione, drenaggio, modellamento con tecnologie avanzate</p>
+        </div>
+        <div class="glass-card p-6 reveal-scale spotlight-card relative">
+          <div class="service-number absolute top-3 right-4">03</div>
+          <span class="text-3xl mb-3 block">💆</span>
+          <h3 class="font-serif text-lg mb-2">Massaggi</h3>
+          <p class="text-xs text-charcoal/55">Relax, decontratturante, drenante, linfodrenaggio manuale</p>
+        </div>
+        <div class="glass-card p-6 reveal-scale spotlight-card relative">
+          <div class="service-number absolute top-3 right-4">04</div>
+          <span class="text-3xl mb-3 block">⚡</span>
+          <h3 class="font-serif text-lg mb-2">Epilazione</h3>
+          <p class="text-xs text-charcoal/55">Laser professionale, luce pulsata, ceretta di precisione</p>
+        </div>
+        <div class="glass-card p-6 reveal-scale spotlight-card relative">
+          <div class="service-number absolute top-3 right-4">05</div>
+          <span class="text-3xl mb-3 block">💅</span>
+          <h3 class="font-serif text-lg mb-2">Nail Care</h3>
+          <p class="text-xs text-charcoal/55">Manicure, pedicure, semipermanente, ricostruzione unghie</p>
+        </div>
+        <div class="glass-card p-6 reveal-scale spotlight-card relative">
+          <div class="service-number absolute top-3 right-4">06</div>
+          <span class="text-3xl mb-3 block">🎯</span>
+          <h3 class="font-serif text-lg mb-2">Consulenza</h3>
+          <p class="text-xs text-charcoal/55">Analisi personalizzata e piano di trattamento su misura per te</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recensioni -->
+  <section id="recensioni" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold text-xs tracking-[0.3em] uppercase font-medium">Dicono di Noi</span>
+        <h2 class="text-4xl md:text-5xl font-serif mt-4 mb-4 text-charcoal blur-reveal">Recensioni</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Competenza e professionalità al top. Dopo la consulenza mi hanno proposto un percorso su misura che sta dando risultati fantastici."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Elena V.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Ambiente elegante e pulitissimo. Si percepisce la passione e la cura in ogni dettaglio. Tornerò sicuramente!"</p>
+          <p class="text-sm text-charcoal/50">— <strong>Paola D.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"La mia estetista di fiducia da anni. Massaggi strepitosi e trattamenti viso che lasciano la pelle luminosa per giorni."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Ilaria S.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prenota -->
+  <section id="prenota" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#faf7f9,#f5eef3)">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold text-xs tracking-[0.3em] uppercase font-medium">Prenotazioni</span>
+        <h2 class="text-4xl md:text-5xl font-serif mt-4 mb-4 text-charcoal blur-reveal">Prenota il Tuo Appuntamento</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60">Scegli data e servizio. Ti risponderemo su WhatsApp per confermare.</p>
+      </div>
+      <div class="glass-card p-8 reveal-up">
+        <form id="bookingForm" class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Nome</label><input type="text" id="name" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Il tuo nome"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Telefono</label><input type="tel" id="phone" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="+39 ..."></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Data</label><input type="date" id="date" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Orario</label><select id="time" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"><option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option></select></div>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Servizio</label>
+            <select id="service" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors">
+              <option>Trattamento Viso</option><option>Trattamento Corpo</option><option>Massaggio Relax</option><option>Massaggio Drenante</option><option>Massaggio Decontratturante</option><option>Epilazione</option><option>Manicure</option><option>Pedicure</option><option>Consulenza Personalizzata</option>
+            </select>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Note (opzionale)</label><textarea id="notes" rows="2" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Esigenze specifiche, allergie, preferenze..."></textarea></div>
+          <button type="submit" class="btn-primary w-full text-center">Conferma Prenotazione</button>
+        </form>
+        <div id="bookingConfirm" class="hidden text-center mt-6">
+          <div class="text-5xl mb-4">💎</div>
+          <h3 class="font-serif text-2xl mb-2">Grazie!</h3>
+          <p class="text-charcoal/60">Ti risponderemo al più presto su WhatsApp per confermare l'appuntamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:#1a1317">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold/60 text-xs tracking-[0.3em] uppercase font-medium">Dove Siamo</span>
+        <h2 class="text-4xl md:text-5xl font-serif mt-4 mb-4 text-white blur-reveal">Contatti</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="glass-card text-charcoal p-8 reveal-left">
+          <h3 class="font-serif text-xl mb-6">My Beauty <span class="text-gold font-bold">Expert</span></h3>
+          <div class="space-y-4 text-charcoal/70">
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📍</span> Corso Vercelli, 58<br><span class="ml-6">28100 Novara (NO)</span></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📞</span> <a href="tel:+393275977707" class="hover:text-brand transition-colors">327 5977707</a></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📱</span> <a href="https://wa.me/393275977707" class="hover:text-brand transition-colors">WhatsApp — 327 5977707</a></p>
+          </div>
+          <div class="mt-6">
+            <p class="text-sm text-charcoal/50 mb-2">Orari di apertura</p>
+            <div class="text-sm space-y-1 text-charcoal/60">
+              <p>Lunedì: Chiuso</p>
+              <p>Mar–Ven: 9:00–12:30, 14:30–19:00</p>
+              <p>Sabato: 9:00–16:00</p>
+              <p>Domenica: Chiuso</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right rounded-[2rem] overflow-hidden min-h-[300px] flex items-center justify-center" style="background:linear-gradient(135deg,rgba(91,44,79,0.45),rgba(201,167,107,0.15))">
+          <div class="text-center">
+            <span class="font-serif text-5xl text-white/10 tracking-wider">EXPERT</span>
+            <p class="text-gold/40 text-xs tracking-[0.3em] uppercase mt-3">Novara</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/30 text-sm">
+        &copy; 2026 My Beauty Expert &mdash; Corso Vercelli 58, 28100 Novara (NO)
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    window.addEventListener('load',()=>{gsap.to('#loader',{opacity:0,duration:0.7,ease:'power2.inOut',onComplete:()=>{document.getElementById('loader').style.display='none'}})});
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>{const d=el.classList.contains('reveal-up')?{y:60}:el.classList.contains('reveal-left')?{x:-60}:el.classList.contains('reveal-right')?{x:60}:{scale:0.9};const ini=el.classList.contains('reveal-scale')?{opacity:0,scale:0.9}:Object.assign({opacity:0},d);gsap.fromTo(el,ini,{opacity:1,x:0,y:0,scale:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}})});
+    gsap.fromTo('#servizi .glass-card',{opacity:0,scale:0.85,y:25},{opacity:1,scale:1,y:0,duration:0.7,stagger:0.08,ease:'power3.out',scrollTrigger:{trigger:'#servizi',start:'top 75%',once:true}});
+    gsap.fromTo('#recensioni .glass-card',{opacity:0,y:45},{opacity:1,y:0,duration:0.7,stagger:0.15,ease:'power2.out',scrollTrigger:{trigger:'#recensioni',start:'top 80%',once:true}});
+    let ls=0;const n=document.getElementById('nav');window.addEventListener('scroll',()=>{const cs=window.pageYOffset;if(cs>100&&cs>ls)n.classList.add('nav-hidden');else n.classList.remove('nav-hidden');ls=cs});
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('translate-x-full'));
+    document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full'));
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full')));
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('name').value;const p=document.getElementById('phone').value;const d=document.getElementById('date').value;const t=document.getElementById('time').value;const s=document.getElementById('service').value;const nt=document.getElementById('notes').value;const m='*Nuova Prenotazione My Beauty Expert*%0A%0A👤 '+n+'%0A📞 '+p+'%0A💆 '+s+'%0A📅 '+d+'%0A🕐 '+t+(nt?'%0A📝 '+nt:'');window.open('https://wa.me/393275977707?text='+m,'_blank');document.getElementById('bookingForm').style.display='none';document.getElementById('bookingConfirm').classList.remove('hidden')});
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script>const lenis=new Lenis({duration:1.2,smoothWheel:true});function raf(time){lenis.raf(time);requestAnimationFrame(raf)}requestAnimationFrame(raf);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(time=>lenis.raf(time*1000));gsap.ticker.lagSmoothing(0)</script>
+  <script>
+    const bo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15});
+    document.querySelectorAll('.blur-reveal').forEach(el=>bo.observe(el));
+    document.querySelectorAll('.spotlight-card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--sx',(e.clientX-r.left)/r.width);card.style.setProperty('--sy',(e.clientY-r.top)/r.height)});card.addEventListener('mouseleave',()=>{card.style.setProperty('--sx',0.5);card.style.setProperty('--sy',0.5)})});
+  </script>
+</body>
+</html>

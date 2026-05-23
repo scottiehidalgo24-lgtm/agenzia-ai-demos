@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simona Fornara — Estetista professionale a Borgomanero. Trattamenti viso e corpo con approccio naturale e personalizzato. Via Lagone 21.">
+  <meta name="theme-color" content="#5C7A5E">
+  <meta property="og:title" content="Simona Fornara — Estetista a Borgomanero">
+  <meta property="og:description" content="Bellezza naturale e benessere autentico a Borgomanero. Trattamenti personalizzati in un ambiente intimo e accogliente.">
+  <title>Simona Fornara — Estetista Borgomanero | Trattamenti Viso e Corpo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"EB Garamond"', 'Georgia', 'serif'],
+            sans: ['"DM Sans"', 'Inter', 'sans-serif']
+          },
+          colors: {
+            cream: '#F6F8F5',
+            brand: '#5C7A5E',
+            'brand-dark': '#4A6352',
+            'brand-light': '#8BA98D',
+            'brand-subtle': '#EEF2ED',
+            soft: '#DDE6DA',
+            gold: '#C9A96E',
+            charcoal: '#2A2E29',
+            warm: '#C5D1C2'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:#F6F8F5;color:#2A2E29}h1,h2,h3{font-family:'EB Garamond',serif}
+    .hero-bg{position:relative;overflow:hidden}
+    .hero-bg::before{content:'';position:absolute;inset:0;background:url('https://res.cloudinary.com/dnrekgt5h/image/upload/agenzia-ai/bg/theme-sage-natural.png') center/cover no-repeat;z-index:0}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,46,41,0.5) 0%,rgba(42,46,41,0.35) 40%,rgba(42,46,41,0.25) 70%,rgba(42,46,41,0.55) 100%);z-index:1}
+    .hero-bg>*{position:relative;z-index:2}
+    .glass{background:rgba(255,255,255,0.65);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.35)}
+    .glass-card{background:rgba(255,255,255,0.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,0.45);border-radius:1.5rem;transition:all 0.4s cubic-bezier(0.16,1,0.3,1)}
+    .glass-card:hover{background:rgba(255,255,255,0.78);transform:translateY(-5px);box-shadow:0 24px 48px rgba(92,122,94,0.1)}
+    .brand-line{width:60px;height:2px;background:linear-gradient(90deg,#5C7A5E,#C9A96E);margin:0 auto}
+    .btn-primary{background:linear-gradient(135deg,#5C7A5E,#8BA98D);color:white;padding:1rem 2.25rem;border-radius:2.5rem;font-weight:500;transition:all 0.35s cubic-bezier(0.16,1,0.3,1);display:inline-block;letter-spacing:0.01em}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(92,122,94,0.35)}
+    .btn-outline{border:1.5px solid rgba(42,46,41,0.3);color:#2A2E29;padding:1rem 2.25rem;border-radius:2.5rem;font-weight:500;transition:all 0.35s;background:rgba(255,255,255,0.35)}
+    .btn-outline:hover{background:#2A2E29;color:white;border-color:#2A2E29}
+    .reveal-up{opacity:0;transform:translateY(50px)}.reveal-left{opacity:0;transform:translateX(-50px)}.reveal-right{opacity:0;transform:translateX(50px)}.reveal-scale{opacity:0;transform:scale(0.88)}
+    .nav-hidden{transform:translateY(-100%)}
+    .blur-reveal{filter:blur(12px);opacity:0;transform:translateY(35px);transition:filter 0.9s cubic-bezier(0.16,1,0.3,1),opacity 0.9s,transform 0.9s}
+    .blur-reveal.visible{filter:blur(0);opacity:1;transform:translateY(0)}
+    .spotlight-card{position:relative;overflow:hidden;--sx:0.5;--sy:0.5}
+    .spotlight-card::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(380px circle at calc(var(--sx)*100%) calc(var(--sy)*100%),rgba(201,169,110,0.14),transparent 60%);opacity:0;transition:opacity 0.35s;pointer-events:none;z-index:1}
+    .spotlight-card:hover::before{opacity:1}.spotlight-card>*{position:relative;z-index:2}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#F6F8F5}::-webkit-scrollbar-thumb{background:#C9A96E;border-radius:3px}
+    .service-icon{font-size:2.25rem;margin-bottom:0.75rem;display:block;text-align:center;transition:transform 0.5s cubic-bezier(0.34,1.56,0.64,1)}
+    .glass-card:hover .service-icon{transform:scale(1.2)}
+    @keyframes float{0%,100%{transform:translate(0,0)rotate(0deg)}33%{transform:translate(24px,-35px)rotate(6deg)}66%{transform:translate(-18px,-18px)rotate(-4deg)}}
+    .petal{position:absolute;pointer-events:none;opacity:0.2;animation:float 16s ease-in-out infinite}
+    .petal:nth-child(2){animation-delay:-5s;left:75%;top:40%;font-size:2rem}
+    .petal:nth-child(3){animation-delay:-9s;left:25%;top:60%;font-size:1.5rem}
+    .petal:nth-child(4){animation-delay:-12s;left:70%;top:20%}
+    .star{color:#C9A96E}.star.empty{color:#C5D1C2}
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <div id="loader" class="fixed inset-0 z-[100] flex items-center justify-center transition-opacity duration-700" style="background:#F6F8F5">
+    <div class="text-center">
+      <div class="text-4xl font-serif text-brand mb-3 tracking-wide">Simona Fornara</div>
+      <div class="w-16 h-[2px] bg-gold mx-auto animate-pulse"></div>
+    </div>
+  </div>
+
+  <nav id="nav" class="fixed top-0 left-0 right-0 z-50 transition-transform duration-500">
+    <div class="glass mx-4 mt-4 rounded-2xl px-6 py-4 flex items-center justify-between max-w-6xl lg:mx-auto">
+      <a href="#" class="flex items-center gap-3">
+        <span class="font-serif text-xl text-charcoal tracking-wide">Simona Fornara</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-charcoal/70">
+        <a href="#chi-siamo" class="hover:text-brand transition-colors">Chi Sono</a>
+        <a href="#servizi" class="hover:text-brand transition-colors">Servizi</a>
+        <a href="#recensioni" class="hover:text-brand transition-colors">Recensioni</a>
+        <a href="#prenota" class="hover:text-brand transition-colors">Prenota</a>
+        <a href="#contatti" class="hover:text-brand transition-colors">Contatti</a>
+        <a href="tel:+393355225690" class="btn-primary text-sm" style="padding:0.65rem 1.6rem">Chiama Ora</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-2xl text-charcoal">☰</button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="fixed inset-0 z-40 flex items-center justify-center transform translate-x-full transition-transform duration-500" style="background:rgba(246,248,245,0.96);backdrop-filter:blur(20px)">
+    <button id="closeMenu" class="absolute top-8 right-8 text-3xl text-charcoal">✕</button>
+    <div class="flex flex-col items-center gap-8 text-2xl font-serif text-charcoal">
+      <a href="#chi-siamo" class="mobile-link">Chi Sono</a><a href="#servizi" class="mobile-link">Servizi</a><a href="#recensioni" class="mobile-link">Recensioni</a><a href="#prenota" class="mobile-link">Prenota</a><a href="#contatti" class="mobile-link">Contatti</a>
+      <a href="tel:+393355225690" class="btn-primary">Chiama Ora</a>
+    </div>
+  </div>
+
+  <section id="hero" class="min-h-screen flex items-center justify-center hero-bg">
+    <div class="absolute inset-0 z-[1] overflow-hidden">
+      <div class="petal" style="left:10%;top:30%">✦</div>
+      <div class="petal">✦</div>
+      <div class="petal">✦</div>
+      <div class="petal">✦</div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-32 pb-20 relative z-10 text-center">
+      <div class="reveal-up">
+        <span class="text-gold/80 text-sm tracking-[0.35em] uppercase font-medium">Estetista • Borgomanero</span>
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-serif font-semibold leading-[1.08] mt-6 mb-6 text-white">Bellezza <span class="text-gold font-semibold">naturale</span>,<br>benessere <span class="text-gold font-semibold">autentico</span></h1>
+        <p class="text-lg text-white/70 max-w-lg mx-auto leading-relaxed mb-10">Trattamenti estetici personalizzati con prodotti naturali. Perché la tua pelle merita ciò che la natura ha di meglio.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#prenota" class="btn-primary">Prenota un Appuntamento</a>
+          <a href="#servizi" class="btn-outline" style="border-color:rgba(255,255,255,0.4);color:white;background:rgba(255,255,255,0.1)">Scopri i Servizi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left order-2 lg:order-1">
+          <div class="rounded-[2.5rem] overflow-hidden shadow-2xl">
+            <div class="w-full h-[450px] flex items-center justify-center" style="background:linear-gradient(135deg,#EEF2ED,#DDE6DA,#C9A96E)">
+              <span class="font-serif text-8xl opacity-20">✦</span>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right order-1 lg:order-2">
+          <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">La Tua Estetista</span>
+          <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-6 text-charcoal blur-reveal">Ciao, sono <span class="italic text-brand">Simona</span></h2>
+          <div class="brand-line mb-8" style="margin-left:0"></div>
+          <div class="space-y-4 text-charcoal/70 leading-relaxed">
+            <p>In Via Lagone 21, a Borgomanero, ho creato il mio studio: uno spazio intimo e naturale dove prenderti cura di te stessa. La mia filosofia è semplice: utilizzare prodotti che rispettano la pelle e l'ambiente, per risultati visibili senza compromessi.</p>
+            <p>Credo nella <strong>bellezza come benessere</strong>: ogni trattamento che offro è pensato per nutrire la tua pelle e la tua anima, con ingredienti naturali e un tocco personale che solo un'estetista indipendente può darti.</p>
+          </div>
+          <div class="mt-8 p-6 rounded-2xl border" style="background:rgba(92,122,94,0.05);border-color:rgba(92,122,94,0.15)">
+            <blockquote class="border-l-2 border-brand pl-6 italic text-charcoal/70 font-serif text-lg">
+              "La natura ci offre tutto ciò di cui abbiamo bisogno per essere belle. Io ti aiuto a scoprirlo."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servizi" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#F6F8F5 0%,rgba(92,122,94,0.06) 30%,#EEF2ED 60%,#F6F8F5 100%)">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Cosa Offro</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Trattamenti Naturali</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60 max-w-xl mx-auto">Ogni trattamento è un momento dedicato a te, con prodotti selezionati e tecniche mirate.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">✨</span><h3 class="font-serif text-lg mb-2">Viso Naturale</h3><p class="text-xs text-charcoal/55">Pulizia · Idratazione<br>Cosmetici Bio</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🌿</span><h3 class="font-serif text-lg mb-2">Rimedi Naturali</h3><p class="text-xs text-charcoal/55">Oli Essenziali<br>Fitoestratti</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💆</span><h3 class="font-serif text-lg mb-2">Massaggi</h3><p class="text-xs text-charcoal/55">Rilassanti<br>Con Oli Naturali</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">💧</span><h3 class="font-serif text-lg mb-2">Idratazione</h3><p class="text-xs text-charcoal/55">Profonda<br>Viso e Corpo</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🌺</span><h3 class="font-serif text-lg mb-2">Corpo</h3><p class="text-xs text-charcoal/55">Scrub Naturali<br>Impacchi</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🌸</span><h3 class="font-serif text-lg mb-2">Benessere</h3><p class="text-xs text-charcoal/55">Rilassamento<br>Aromaterapia</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">👁️</span><h3 class="font-serif text-lg mb-2">Sopracciglia</h3><p class="text-xs text-charcoal/55">Design Naturale<br>Colorazione</p></div>
+        <div class="glass-card p-6 text-center reveal-scale spotlight-card"><span class="service-icon">🎁</span><h3 class="font-serif text-lg mb-2">Pacchetti</h3><p class="text-xs text-charcoal/55">Percorsi Benessere<br>Personalizzati</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-4xl mb-4">🍃</div>
+          <h3 class="font-serif text-xl mb-3">Naturale al 100%</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Prodotti biologici e ingredienti naturali selezionati per rispettare ogni tipo di pelle.</p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-4xl mb-4">🤲</div>
+          <h3 class="font-serif text-xl mb-3">Trattamenti su Misura</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Ogni cliente è unica. Ascolto le tue esigenze per creare il percorso perfetto per te.</p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-4xl mb-4">🏡</div>
+          <h3 class="font-serif text-xl mb-3">Atmosfera Intima</h3>
+          <p class="text-charcoal/60 text-sm leading-relaxed">Un ambiente riservato e tranquillo dove poterti rilassare completamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recensioni" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Dicono di Me</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Recensioni</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Simona è un'estetista meravigliosa. Prodotti naturali e mani d'oro. Ogni volta è una coccola!"</p>
+          <p class="text-sm text-charcoal/50">— <strong>Alessia C.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Finalmente un'estetista che usa prodotti naturali. La mia pelle non è mai stata così bella."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Giulia T.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+        <div class="glass-card p-8 reveal-up">
+          <div class="text-gold mb-3"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="text-charcoal/70 italic mb-4">"Ambiente rilassante e professionale. I massaggi con oli essenziali sono un'esperienza unica."</p>
+          <p class="text-sm text-charcoal/50">— <strong>Martina L.</strong> <span class="text-brand-light">· Google</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prenota" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:linear-gradient(180deg,#F6F8F5,#EEF2ED)">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-brand text-sm tracking-[0.3em] uppercase font-medium">Prenotazioni</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-charcoal blur-reveal">Prenota il Tuo Momento</h2>
+        <div class="brand-line mb-6"></div>
+        <p class="text-charcoal/60">Scegli data e ora. Simona ti risponderà personalmente per confermare.</p>
+      </div>
+      <div class="glass-card p-8 reveal-up">
+        <form id="bookingForm" class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Nome</label><input type="text" id="name" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Il tuo nome"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Telefono</label><input type="tel" id="phone" required class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="+39 ..."></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Data</label><input type="date" id="date" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"></div>
+            <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Orario</label><select id="time" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors"><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>11:30</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option></select></div>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Servizio</label>
+            <select id="service" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors">
+              <option>Viso — Trattamento Naturale</option><option>Viso — Idratazione Profonda</option><option>Massaggio Rilassante</option><option>Corpo — Scrub Naturale</option><option>Aromaterapia</option><option>Sopracciglia</option><option>Percorso Benessere</option>
+            </select>
+          </div>
+          <div><label class="block text-sm font-medium text-charcoal/60 mb-1">Note (opzionale)</label><textarea id="notes" rows="2" class="w-full p-3 rounded-xl border border-warm bg-white/50 focus:outline-none focus:border-brand transition-colors" placeholder="Allergie, preferenze, richieste particolari..."></textarea></div>
+          <button type="submit" class="btn-primary w-full text-center">Conferma Prenotazione</button>
+        </form>
+        <div id="bookingConfirm" class="hidden text-center mt-6">
+          <div class="text-5xl mb-4">🌿</div>
+          <h3 class="font-serif text-2xl mb-2">Grazie!</h3>
+          <p class="text-charcoal/60">Simona ti contatterà al più presto per confermare l'appuntamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatti" class="py-24 lg:py-32 relative overflow-hidden scroll-mt-28" style="background:#2A2E29">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center reveal-up mb-16">
+        <span class="text-gold/70 text-sm tracking-[0.3em] uppercase font-medium">Dove Sono</span>
+        <h2 class="text-4xl md:text-5xl font-serif font-semibold mt-4 mb-4 text-white blur-reveal">Contatti</h2>
+        <div class="brand-line mb-6"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="glass-card text-charcoal p-8 reveal-left">
+          <h3 class="font-serif text-xl mb-6">Simona Fornara</h3>
+          <div class="space-y-4 text-charcoal/70">
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📍</span> Via Lagone 21<br><span class="ml-6">28021 Borgomanero (NO)</span></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">📞</span> <a href="tel:+393355225690" class="hover:text-brand transition-colors">335 522 5690</a></p>
+            <p class="flex items-start gap-3"><span class="text-brand mt-0.5">💬</span> <a href="https://wa.me/393355225690" class="hover:text-brand transition-colors">WhatsApp</a></p>
+          </div>
+          <div class="mt-6">
+            <p class="text-sm text-charcoal/50 mb-2">Orari di apertura</p>
+            <div class="text-sm space-y-1 text-charcoal/60">
+              <p>Lunedì: Chiuso</p>
+              <p>Mar–Ven: 9:30–12:30, 14:30–19:00</p>
+              <p>Sabato: 9:00–13:00</p>
+              <p>Domenica: Chiuso</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal-right rounded-[2.5rem] overflow-hidden min-h-[300px] flex items-center justify-center" style="background:linear-gradient(135deg,rgba(92,122,94,0.4),rgba(201,169,110,0.25))">
+          <span class="font-serif text-4xl opacity-25 text-white">Borgomanero</span>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/30 text-sm">
+        &copy; 2026 Simona Fornara &mdash; Via Lagone 21, 28021 Borgomanero (NO)
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    window.addEventListener('load',()=>{gsap.to('#loader',{opacity:0,duration:0.7,ease:'power2.inOut',onComplete:()=>{document.getElementById('loader').style.display='none'}})});
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>{const d=el.classList.contains('reveal-up')?{y:60}:el.classList.contains('reveal-left')?{x:-60}:el.classList.contains('reveal-right')?{x:60}:{scale:0.9};const ini=el.classList.contains('reveal-scale')?{opacity:0,scale:0.9}:Object.assign({opacity:0},d);gsap.fromTo(el,ini,{opacity:1,x:0,y:0,scale:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%',once:true}})});
+    gsap.fromTo('#servizi .glass-card',{opacity:0,scale:0.8,y:30},{opacity:1,scale:1,y:0,duration:0.7,stagger:0.08,ease:'power3.out',scrollTrigger:{trigger:'#servizi',start:'top 75%',once:true}});
+    gsap.fromTo('#recensioni .glass-card',{opacity:0,y:40},{opacity:1,y:0,duration:0.6,stagger:0.15,ease:'power2.out',scrollTrigger:{trigger:'#recensioni',start:'top 80%',once:true}});
+    let ls=0;const n=document.getElementById('nav');window.addEventListener('scroll',()=>{const cs=window.pageYOffset;if(cs>100&&cs>ls)n.classList.add('nav-hidden');else n.classList.remove('nav-hidden');ls=cs});
+    document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('translate-x-full'));
+    document.getElementById('closeMenu').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full'));
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('translate-x-full')));
+    document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const nm=document.getElementById('name').value;const ph=document.getElementById('phone').value;const dt=document.getElementById('date').value;const tm=document.getElementById('time').value;const sv=document.getElementById('service').value;const nt=document.getElementById('notes').value;const msg='*Nuova Prenotazione — Simona Fornara*%0A%0A👤 '+nm+'%0A📞 '+ph+'%0A💆 '+sv+'%0A📅 '+dt+'%0A🕐 '+tm+(nt?'%0A📝 '+nt:'');window.open('https://wa.me/393355225690?text='+msg,'_blank');document.getElementById('bookingForm').style.display='none';document.getElementById('bookingConfirm').classList.remove('hidden')});
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script>const lenis=new Lenis({duration:1.2,smoothWheel:true});function raf(time){lenis.raf(time);requestAnimationFrame(raf)}requestAnimationFrame(raf);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(time=>lenis.raf(time*1000));gsap.ticker.lagSmoothing(0)</script>
+
+  <script>
+    const bo=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15});
+    document.querySelectorAll('.blur-reveal').forEach(el=>bo.observe(el));
+    document.querySelectorAll('.spotlight-card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--sx',(e.clientX-r.left)/r.width);card.style.setProperty('--sy',(e.clientY-r.top)/r.height)});card.addEventListener('mouseleave',()=>{card.style.setProperty('--sx',0.5);card.style.setProperty('--sy',0.5)})});
+  </script>
+</body>
+</html>
