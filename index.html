@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenzia AI — Demo Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#faf6f2 0%,#f5ebe0 50%,#e8d5c4 100%);color:#2d2a26;min-height:100vh}
+  .container{max-width:900px;margin:0 auto;padding:3rem 1.5rem}
+  h1{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:600;margin-bottom:0.5rem;text-align:center}
+  .subtitle{text-align:center;color:#7A4A59;font-size:0.8rem;letter-spacing:0.3em;text-transform:uppercase;margin-bottom:2.5rem}
+  .demo{background:rgba(255,255,255,0.6);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.4);border-radius:1.2rem;padding:1.4rem 1.8rem;margin:0.8rem 0;display:flex;align-items:center;gap:1.2rem;transition:all 0.3s ease}
+  .demo:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.08);background:rgba(255,255,255,0.8)}
+  .num{width:44px;height:44px;background:linear-gradient(135deg,#d4a5a5,#b5838d);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:600;font-size:1.1rem;flex-shrink:0}
+  .info{flex:1}
+  .info h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:0.2rem}
+  .info p{color:#7A4A59;font-size:0.85rem}
+  a{color:#9B5A6B;text-decoration:none;font-weight:500;font-size:0.9rem;padding:0.5rem 1.2rem;border:1.5px solid #d4a5a5;border-radius:2rem;transition:all 0.3s;white-space:nowrap}
+  a:hover{background:#9B5A6B;color:white;border-color:#9B5A6B}
+  .footer{text-align:center;margin-top:3rem;color:#7A4A59;opacity:0.5;font-size:0.85rem}
+  .stats{display:flex;justify-content:center;gap:2rem;margin-bottom:2rem;flex-wrap:wrap}
+  .stat{text-align:center;background:rgba(255,255,255,0.4);border-radius:1rem;padding:0.8rem 1.5rem;border:1px solid rgba(212,165,165,0.3)}
+  .stat .num{width:auto;height:auto;background:transparent;color:#7A4A59;font-family:'Playfair Display',serif;font-size:2rem}
+  .stat .label{font-size:0.8rem;color:#8B5A6B;margin-top:0.2rem}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="subtitle">Agenzia AI</div>
+  <h1>Demo Clienti</h1>
+  <div class="stats">
+    <div class="stat"><div class="num">5</div><div class="label">Demo pronte</div></div>
+    <div class="stat"><div class="num">23</div><div class="label">Lead totali</div></div>
+    <div class="stat"><div class="num">🏆</div><div class="label">Premium</div></div>
+  </div>
+  <div class="demo"><div class="num">1</div><div class="info"><h3>Estetica Cigno</h3><p>Corso Risorgimento 66, Novara</p></div><a href="demos/estetica-cigno/">Guarda demo →</a></div>
+  <div class="demo"><div class="num">2</div><div class="info"><h3>Centro Estetico Linea Più</h3><p>Via dei Mille 7, Novara</p></div><a href="demos/centro-linea-piu/">Guarda demo →</a></div>
+  <div class="demo"><div class="num">3</div><div class="info"><h3>Bora Bora</h3><p>Via Andrea Costa 15/A, Novara</p></div><a href="demos/bora-bora/">Guarda demo →</a></div>
+  <div class="demo"><div class="num">4</div><div class="info"><h3>Estetica Glamour</h3><p>Corso XXIII Marzo 199, Novara</p></div><a href="demos/estetica-glamour/">Guarda demo →</a></div>
+  <div class="demo"><div class="num">5</div><div class="info"><h3>Beauty & Glow</h3><p>Corso Risorgimento 33, Novara</p></div><a href="demos/beauty-and-glow/">Guarda demo →</a></div>
+  <div class="footer">GSAP · Three.js · Lenis · Tailwind · Design Premium</div>
+</div>
+</body>
+</html>
